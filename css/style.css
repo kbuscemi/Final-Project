@@ -1,0 +1,159 @@
+* {
+
+  box-sizing: border-box; 
+}
+
+/*Page 1 */
+
+body.map{
+	background-color:#FFF0E0;
+}
+
+h1{
+	font-family: 'Cedarville Cursive', cursive;
+	font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	color: #000066;
+
+}
+
+header img{
+	border-radius: 100%;
+	margin: 30px 150px;
+	padding: 0 200px 0 200px;
+}
+
+.button{
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 18px;
+  border-radius: 10px;
+  float: right;
+  margin: 0 10px 0 10px;
+  color:#000066;
+  background-color:#FFF0E0 ;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*7 Wonders*/
+
+body.seven{
+	background-color: #F7FFFF;
+}
+
+body.seven .container { /* targets elements with class of container, that are descendants of a <body class="blog"> element */
+  display: grid;
+  grid-row-gap: 40px;
+  min-height: 100px;
+  grid-template-columns: 50% 50% 50%;
+  grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+  grid-template-areas:  " a a a "
+                        " b b c"
+                        " d e f"
+                        " g g g"
+  }   
+
+body.seven header h1{
+	padding-left: 50px;
+	margin-left: 500px;
+}
+
+div{
+	text-align: center;
+	align-items: center;
+}
+ h3{
+ 	font-family:'Cedarville Cursive', cursive;
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	color: #000066;
+ }                   
+
+p{
+	text-align: center;
+	padding: 20px 20px 10px 20px;
+	margin: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+body.seven .container div.a{
+	grid-area: a;
+	justify-content: space-around;
+
+
+}
+
+#pyramid{
+	border-radius: 75px;
+	height: 300px;
+	width: 350px;
+
+}
+
+body.seven .container div.b{
+	grid-area: b;
+}
+
+#wall{
+	border-radius: 75px;
+}
+body.seven .container div.c{
+	grid-area: c;
+}
+
+#petra{
+	border-radius: 75px;
+	height: 300px;
+	width: 350px;
+}
+
+body.seven .container div.d{
+	grid-area: d;
+}
+
+#rio{
+	border-radius: 75px;
+	height: 300px;
+	width: 350px;
+}
+
+body.seven .container div.e{
+	grid-area: e;
+}
+
+#peru{
+	border-radius: 75px;
+	width: 55%;
+}
+body.seven .container div.f{
+	grid-area: f;
+}
+
+#itza{
+	border-radius: 75px;
+
+}
+body.seven .container div.g{
+	grid-area: g;
+}
+
+#rome{
+	border-radius:75px;
+	height: 375px;
+	width: 400px;
+}
+
+body.seven footer nav ul{
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+
+}
+
+li{
+	font-family:'Raleway', sans-serif;
+}
+
