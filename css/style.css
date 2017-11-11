@@ -41,30 +41,35 @@ a{
 /*7 Wonders*/
 
 body.seven{
-	background-color: #F7FFFF;
+	background-image:url("https://scied.ucar.edu/sites/default/files/images/large_image_for_image_content/altostratus3_big.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;	
 }
+
 
 body.seven .container { /* targets elements with class of container, that are descendants of a <body class="blog"> element */
   display: grid;
   grid-row-gap: 40px;
   min-height: 100px;
-  grid-template-columns: 50% 50% 50%;
-  grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
-  grid-template-areas:  " a a a "
-                        " b b c"
-                        " d e f"
-                        " g g g"
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+  /*grid-template-areas:  "a a a "
+                        "b b c"
+                        "d e f"
+                        "g g g"*/
   }   
+
 
 body.seven header h1{
 	padding-left: 50px;
-	margin-left: 500px;
+
 }
 
 div{
 	text-align: center;
 	align-items: center;
 }
+
  h3{
  	font-family:'Cedarville Cursive', cursive;
 	font-weight: 600;
@@ -73,14 +78,33 @@ div{
 	color: #000066;
  }                   
 
-p{
+p {
 	text-align: center;
 	padding: 20px 20px 10px 20px;
-	margin: 50px;
+	margin: 0 100px 0 100px;
 	font-family: 'Raleway', sans-serif;
+	
+
 }
+p:first-of-type{display: none;}
+
+.read-more{
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 18px;
+  
+}
+
+.read-less{
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 18px;
+  display: none;
+  
+}
+
 body.seven .container div.a{
-	grid-area: a;
+	/*grid-area: a;*/
+	grid-row:1/2;
+	grid-column:2/3;
 	justify-content: space-around;
 
 
@@ -94,14 +118,18 @@ body.seven .container div.a{
 }
 
 body.seven .container div.b{
-	grid-area: b;
+	/*grid-area: b;*/
+	grid-row: 2/3;
+	grid-column:1/2;
 }
 
 #wall{
 	border-radius: 75px;
 }
 body.seven .container div.c{
-	grid-area: c;
+	/*grid-area: c;*/
+	grid-row: 2/3;
+	grid-column: 2/3;
 }
 
 #petra{
@@ -111,7 +139,9 @@ body.seven .container div.c{
 }
 
 body.seven .container div.d{
-	grid-area: d;
+	/*grid-area: d;*/
+	grid-row: 2/3;
+	grid-column:3/4;
 }
 
 #rio{
@@ -121,15 +151,19 @@ body.seven .container div.d{
 }
 
 body.seven .container div.e{
-	grid-area: e;
+	/*grid-area: e;*/
+	grid-row: 3/4;
+	grid-column: 1/2
 }
 
 #peru{
 	border-radius: 75px;
-	width: 55%;
+	width: 100%;
 }
 body.seven .container div.f{
-	grid-area: f;
+	/*grid-area: f;*/
+	grid-row: 3/4;
+	grid-column: 2/3;
 }
 
 #itza{
@@ -137,23 +171,33 @@ body.seven .container div.f{
 
 }
 body.seven .container div.g{
-	grid-area: g;
+	/*grid-area: g;*/
+	grid-row: 3/4;
+	grid-column: 3/4;
 }
 
 #rome{
 	border-radius:75px;
-	height: 375px;
+	height: 350px;
 	width: 400px;
+}
+
+footer{
+	padding-top: 30px;
 }
 
 body.seven footer nav ul{
 	display: flex;
-	flex: 1;
 	justify-content: space-around;
-
+	list-style-type: none; 
+	
 }
 
 li{
 	font-family:'Raleway', sans-serif;
+	font-size: 18px;
+
 }
+ a:visited { text-decoration: none; color:#000066; }
+
 
